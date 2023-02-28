@@ -1,0 +1,43 @@
+CREATE TABLE hair_supplies (id INTEGER PRIMARY KEY, product TEXT, quantity INTEGER, purpose TEXT, viral TEXT);
+
+insert into hair_supplies values 
+(1, "luscious moisturizer", 10, "hair styler", "yes");
+
+insert into hair_supplies values 
+(2, "Rose quartz serum", 5, "scalp treatment", "not yet");
+
+insert into hair_supplies values
+(3, "Emerald stimulating set", 10, "hairloss product", "No");
+
+insert into hair_supplies values
+(4, "Rose quartz set", 10, "hairloss product", "Yes");
+
+insert into hair_supplies values
+(5, "Detox Me", 10, "hairloss product", "Yes");
+
+insert into hair_supplies values
+(6, "Crowned Tea", 10, "hormone balancer ", "No");
+
+insert into hair_supplies values
+(7, "Crown Reserver", 10, "hairloss product", "Yes");
+
+insert into hair_supplies values
+(8, "Mineral Seal", 10, "end Sealant", "No");
+
+insert into hair_supplies values
+(9, "Deep Conditioner", 9, "hair and scalp care product", "Yes");
+
+insert into hair_supplies values
+(10, "Crowned Extract", 7, "hairloss product", "No");
+
+insert into hair_supplies values
+(11, "Crowned Tea Plus", 13, "hairloss product", "No");
+
+insert into hair_supplies values
+(12, "Rose Quartz Stimualating Set", 14, "hairloss product", "No");
+
+insert into hair_supplies values
+(13, "Care Plan", 11, "services", "No");
+
+insert into hair_supplies values
+(14, "Consultation", 10, "Services", "No");
