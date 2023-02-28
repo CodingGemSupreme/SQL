@@ -1,4 +1,4 @@
--- This is a sample store database. This database lists the price, quantity, product pourpose, and viral status --
+/* This is a sample store database. This database lists the price, quantity, product pourpose, and viral status -- */
 
 CREATE TABLE hair_supplies (id INTEGER PRIMARY KEY, product TEXT, quantity INTEGER, purpose TEXT, price INTEGER, viral TEXT);
 insert into hair_supplies values 
