@@ -1,43 +1,42 @@
-CREATE TABLE hair_supplies (id INTEGER PRIMARY KEY, product TEXT, quantity INTEGER, purpose TEXT, viral TEXT);
+-- This is a sample store database. This database lists the price, quantity, product pourpose, and viral status --
 
+CREATE TABLE hair_supplies (id INTEGER PRIMARY KEY, product TEXT, quantity INTEGER, purpose TEXT, price INTEGER, viral TEXT);
 insert into hair_supplies values 
-(1, "luscious moisturizer", 10, "hair styler", "yes");
-
+(1, "luscious moisturizer", 10, "hair styler", 25.00, "yes");
 insert into hair_supplies values 
-(2, "Rose quartz serum", 5, "scalp treatment", "not yet");
-
+(2, "Rose quartz serum", 5, "scalp treatment", 45.99, "not yet");
 insert into hair_supplies values
-(3, "Emerald stimulating set", 10, "hairloss product", "No");
-
+(3, "Emerald stimulating set", 10, "hairloss product", 129.95, "No");
 insert into hair_supplies values
-(4, "Rose quartz set", 10, "hairloss product", "Yes");
-
+(4, "Rose quartz set", 10, "hairloss product", 69.95, "Yes");
 insert into hair_supplies values
-(5, "Detox Me", 10, "hairloss product", "Yes");
-
+(5, "Detox Me", 10, "hairloss product", 36.99, "Yes");
 insert into hair_supplies values
-(6, "Crowned Tea", 10, "hormone balancer ", "No");
-
+(6, "Crowned Tea", 10, "hormone balancer ", 45.00,  "No");
 insert into hair_supplies values
-(7, "Crown Reserver", 10, "hairloss product", "Yes");
-
+(7, "Crown Reserver", 10, "hairloss product", 69.95, "Yes");
 insert into hair_supplies values
-(8, "Mineral Seal", 10, "end Sealant", "No");
-
+(8, "Mineral Seal", 10, "end Sealant", 24.99,  "No");
 insert into hair_supplies values
-(9, "Deep Conditioner", 9, "hair and scalp care product", "Yes");
-
+(9, "Deep Conditioner", 9, "hair and scalp care product",25.99, "Yes");
 insert into hair_supplies values
-(10, "Crowned Extract", 7, "hairloss product", "No");
-
+(10, "Crowned Extract", 7, "hairloss product",97.00, "No");
 insert into hair_supplies values
-(11, "Crowned Tea Plus", 13, "hairloss product", "No");
-
+(11, "Crowned Tea Plus", 13, "hairloss product", 55.00, "No");
 insert into hair_supplies values
-(12, "Rose Quartz Stimualating Set", 14, "hairloss product", "No");
-
+(12, "Rose Quartz Stimualating Set", 14, "hairloss product", 99.00,  "No");
 insert into hair_supplies values
-(13, "Care Plan", 11, "services", "No");
-
+(13, "Care Plan", 11, "services", 1599.00, "No");
 insert into hair_supplies values
-(14, "Consultation", 10, "Services", "No");
+(14, "Consultation", 10,  "Services", 125.00, "No");
+
+
+SELECT * FROM hair_supplies;
+
+--selecting items based on quantity and prices over 99.00 dolars --
+
+SELECT * FROM hair_supplies WHERE price > 99.00 ORDER BY quantity DESC;
+
+--organizing items based on prices asceding-- 
+
+SELECT * FROM hair_supplies WHERE id  ORDER BY price ASC;
