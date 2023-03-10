@@ -23,14 +23,14 @@ AND orderid <> 'Order ID';
 -- and what was the price?
 SELECT Product, price FROM BIT_DB.JanSales
 ORDER BY price ASC LIMIT 1;
-
+--Batteries
 -- What is the total revenue for each product sold in January? 
 --(Revenue can be calculated using the number of 
 --products sold and the price of the products).
 
 SELECT SUM(quantity)*price AS revenue, product FROM BIT_DB.JanSales
 GROUP BY product, price;
---1805013.6599999235
+--1805013.6599999235 spread over 20 different line items
 
 --Which products were sold in February at 548 Lincoln St, 
 --Seattle, WA 98101, how many of each were sold, and what 
@@ -42,6 +42,7 @@ SUM(quantity)*price AS revenue
 FROM BIT_DB.FebSales 
 WHERE location = '548 Lincoln St, Seattle, WA 98101'
 GROUP BY product;
+--Batteries 7.68
 
 --How many customers ordered more than 2 products at a time in February, 
 --and what was the average amount spent for those customers?
@@ -54,3 +55,4 @@ ON FEB.orderid=cust.order_id
 WHERE Feb.Quantity>2
 AND length(orderid) = 6 
 AND orderid <> 'Order ID';
+-- 278 customers ordered more than two products with average spend of 13.82
