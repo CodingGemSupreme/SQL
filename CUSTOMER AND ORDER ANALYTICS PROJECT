@@ -84,3 +84,7 @@ SELECT product,
 sum(quantity*price) FROM BIT_DB.JanSales 
 GROUP BY product ORDER BY sum(quantity*price) desc  
 LIMIT 1;
+
+
+-- Visualized Porject: 
+-- https://public.tableau.com/app/profile/oma.withers/viz/ProductOrderAnalytics_16804990793480/Dashboard1#1
